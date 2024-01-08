@@ -22,14 +22,14 @@
     <p>Guess the number between 1 and 100 in 10 turns.</p>
 
     <script>
-        // Function to start or restart the game
+       
         function startGame() {
-            // Initialize variables
+          
             let secretNumber = Math.floor(Math.random() * 100) + 1;
             let turns = 10;
             let guessedNumbers = [];
 
-            // Function to handle a player's guess
+            
             function guessNumber() {
                 let guess = prompt(`Turns left: ${turns}\nPrevious guesses: ${guessedNumbers.join(', ')}\nEnter your guess:`);
                 guess = parseInt(guess);
@@ -54,11 +54,11 @@
                 }
             }
 
-            // Start the game by calling the guessNumber function
+           
             guessNumber();
         }
 
-        // Function to ask the player if they want to play again
+        
         function playAgain() {
             let playAgain = confirm("Do you want to play again?");
             if (playAgain) {
@@ -68,7 +68,7 @@
             }
         }
 
-        // Start the game when the page loads
+       
         startGame();
     </script>
 
